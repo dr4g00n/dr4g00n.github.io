@@ -180,7 +180,7 @@ th {
   padding: 0;
 }
 ::selection {
-  background: #262a30;
+  background: #0ba6ab;
   color: #fff;
 }
 body {
@@ -277,14 +277,14 @@ p {
   margin: 0 0 25px 0;
 }
 a {
-  color: #555;
+  color: #0ba6ab;
   text-decoration: none;
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid #0ba6ab;
   word-wrap: break-word;
 }
 a:hover {
-  color: #222;
-  border-bottom-color: #222;
+  color: #0ba6ab;
+  border-bottom-color: #0ba6ab;
 }
 blockquote {
   margin: 0;
@@ -541,7 +541,7 @@ pre code {
   padding-right: 10px;
   color: #869194;
   text-align: right;
-  background-color: #eff2f3;
+  background-color: #e8f4f4;
 }
 .highlight .code pre {
   width: 100%;
@@ -817,8 +817,8 @@ pre .javascript .function {
   padding: 0 20px;
   font-size: 14px;
   color: #fff;
-  background: #222;
-  border: 2px solid #222;
+  background: #0ba6ab;
+  border: 2px solid #0ba6ab;
   text-decoration: none;
   border-radius: 0;
   transition-property: background-color;
@@ -828,8 +828,8 @@ pre .javascript .function {
 }
 .btn:hover,
 .post-button .btn:hover {
-  border-color: #222;
-  color: #222;
+  border-color: #0ba6ab;
+  color: #0ba6ab;
   background: #fff;
 }
 .btn-bar {
@@ -933,7 +933,7 @@ pre .javascript .function {
   z-index: 1050;
   padding: 0 6px;
   width: 24px;
-  background: #222;
+  background: #0ba6ab;
   font-size: 12px;
   opacity: 1;
   color: #fff;
@@ -966,7 +966,7 @@ pre .javascript .function {
 }
 .headband {
   height: 3px;
-  background: #222;
+  background: #0ba6ab;
 }
 .site-meta {
   margin: 0;
@@ -982,7 +982,7 @@ pre .javascript .function {
   display: inline-block;
   padding: 0 40px;
   color: #fff;
-  background: #222;
+  background: #0ba6ab;
   border-bottom: none;
 }
 .brand:hover {
@@ -1079,7 +1079,7 @@ pre .javascript .function {
   transition-delay: 0s;
 }
 .menu .menu-item a:hover {
-  border-bottom-color: #222;
+  border-bottom-color: #0ba6ab;
 }
 .menu .menu-item .fa {
   margin-right: 5px;
@@ -1279,7 +1279,7 @@ pre .javascript .function {
   border-bottom-color: #666;
 }
 .posts-collapse .post-header:hover::before {
-  background: #222;
+  background: #0ba6ab;
 }
 .posts-collapse .post-meta {
   position: absolute;
@@ -1315,6 +1315,18 @@ pre .javascript .function {
   text-align: center;
   word-break: break-word;
   font-weight: 400;
+}
+.post {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 30px;
+  margin-bottom: 40px;
+  transition: all 0.3s ease;
+}
+.post:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
 }
 @media (max-width: 767px) {
   .posts-expand .post-title {
@@ -1417,7 +1429,7 @@ pre .javascript .function {
 .post-button .btn {
   color: #fff;
   font-size: 14px;
-  background: #222;
+  background: #0ba6ab;
   border-radius: 0;
   line-height: 2;
   margin: 0 4px 8px 4px;
@@ -1527,7 +1539,7 @@ pre .javascript .function {
   bottom: 0;
   width: 0;
   z-index: 1040;
-  box-shadow: inset 0 2px 6px #000;
+  box-shadow: inset 0 2px 6px #0ba6ab;
   background: #222;
   -webkit-transform: translateZ(0);
 }
@@ -2273,12 +2285,12 @@ pre .javascript .function {
 }
 #schedule ul#event-list hr {
   margin: 20px 0 45px 0 !important;
-  background: #222;
+  background: #0ba6ab;
 }
 #schedule ul#event-list hr:after {
   display: inline-block;
   content: 'NOW';
-  background: #222;
+  background: #0ba6ab;
   color: #fff;
   font-weight: bold;
   text-align: right;
@@ -2347,7 +2359,7 @@ pre .javascript .function {
   color: #dfdfdf;
 }
 #schedule ul#event-list li.event-now {
-  background: #222;
+  background: #0ba6ab;
   color: #fff;
   padding: 15px 0 15px 10px;
 }
