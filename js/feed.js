@@ -1,4 +1,4 @@
-/* SITE_FEED — site interactions (no dependencies) */
+/* DANGLING_PTR — site interactions (no dependencies) */
 (function () {
   "use strict";
 

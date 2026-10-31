@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://isec.club/sitemap.xml
+Sitemap: https://dr4g00n.github.io/sitemap.xml

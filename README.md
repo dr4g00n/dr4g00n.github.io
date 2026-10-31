@@ -1,11 +1,11 @@
-# SITE_FEED — 视觉设计档案
+# DANGLING_PTR — 视觉设计档案
 
 > 个人视觉设计作品集 · 界面 / 品牌 / 编辑 / 实验
-> 在线地址：<https://isec.club>
+> 在线地址：<https://dr4g00n.github.io>
 
 深色编辑风格的作品集网站：近黑底色 + 青柠强调色、超大号标题、编号作品网格、跑马灯与巨大页脚标语。纯静态 HTML/CSS/JS，无构建步骤、无框架、无第三方 JS 依赖。
 
-内容即设计图：8 件作品以 16:10 大图呈现，点开进入全屏查看器，没有文章页面。
+内容即设计图：9 件作品以 16:10 大图呈现，点开进入全屏查看器，没有文章页面。
 
 ---
 
@@ -29,7 +29,7 @@ python3 -m http.server 8000
 │   └── fonts.css           # 自托管字体 @font-face
 ├── js/feed.js              # 吸顶导航、移动菜单、筛选、灯箱、揭示动画
 ├── images/
-│   ├── works/              # 8 件作品图（1600×1000，兼作 og:image）
+│   ├── works/              # 9 件作品图（1600×1000，兼作 og:image）
 │   └── favicon.svg
 ├── lib/fonts/              # Inter / JetBrains Mono 变量字体子集
 ├── sitemap.xml / robots.txt
@@ -64,7 +64,7 @@ python3 -m http.server 8000
 1. 把设计图导出为 16:10（建议 1600×1000），命名为 `images/works/09-<slug>.jpg`。
 2. 在 `index.html` 的 `.works` 中复制一张卡片，改 `data-img` / `data-title` / `data-meta` / `data-tags`、编号、标题、年份与标签。
 3. 在 `#index` 的 `.indexlist` 中加一行，`data-open` 填新作品在卡片中的序号（从 0 开始）。
-4. 同步修改两处的 `(08)` 计数，并更新 `sitemap.xml` 的 `lastmod`。
+4. 同步修改两处的 `(09)` 计数，并更新 `sitemap.xml` 的 `lastmod`。
 
 分类取值：`ui` / `brand` / `editorial` / `mobile` / `lab`（对应筛选 chips）。
 
@@ -86,5 +86,5 @@ python3 -m http.server 8000
 
 ## 联系
 
-- Email: <hello@isec.club>
+- Email: <hello@danglingptr.com>
 - GitHub: [@dr4g00n](https://github.com/dr4g00n)
