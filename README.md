@@ -1,7 +1,7 @@
 # DANGLING_PTR — 视觉设计档案
 
 > 个人视觉设计作品集 · 界面 / 品牌 / 编辑 / 实验
-> 在线地址：<https://dr4g00n.github.io>
+> 在线地址：<https://design.danglingptr.com>
 
 深色编辑风格的作品集网站：近黑底色 + 青柠强调色、超大号标题、编号作品网格、跑马灯与巨大页脚标语。纯静态 HTML/CSS/JS，无构建步骤、无框架、无第三方 JS 依赖。
 
