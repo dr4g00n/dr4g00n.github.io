@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<script>document.documentElement.className = "js";</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>404 — SITE_FEED</title>
+<meta name="description" content="页面不存在。">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0b0b0d">
+<link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/css/fonts.css">
+<link rel="stylesheet" href="/css/feed.css">
+</head>
+
+<body>
+<a class="skip-link" href="#main">跳到正文</a>
+
+<header class="site-head" id="siteHead">
+  <div class="wrap site-head__inner">
+    <a class="brand" href="/">SITE_FEED<span class="brand__mark">*</span></a>
+    <nav class="nav" aria-label="主导航">
+      <a class="nav__link" href="/#works">作品 <span>WORKS</span></a>
+      <a class="nav__link" href="/#index">索引 <span>INDEX</span></a>
+      <a class="nav__link" href="/#contact">联系 <span>CONTACT</span></a>
+    </nav>
+    <div class="site-head__actions">
+      <a class="btn btn--lime" href="mailto:hello@isec.club">来信</a>
+      <button class="burger" id="burger" aria-label="打开菜单" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <nav class="mobile-menu__list" aria-label="移动端导航">
+    <a href="/#works">作品 <span>WORKS</span></a>
+    <a href="/#index">索引 <span>INDEX</span></a>
+    <a href="/#contact">联系 <span>CONTACT</span></a>
+    <a href="mailto:hello@isec.club">来信 <span>EMAIL</span></a>
+  </nav>
+  <div class="mobile-menu__foot">
+    <a href="mailto:hello@isec.club">hello@isec.club</a>
+    <span>© <span data-year>2026</span> SITE_FEED</span>
+  </div>
+</div>
+
+<main id="main">
+  <section class="notfound">
+    <div class="wrap">
+      <p class="eyebrow eyebrow--lime">ERROR 404 — 页面不存在</p>
+      <h1 class="notfound__title">404<span class="dot">.</span></h1>
+      <div class="notfound__row">
+        <p class="notfound__text">这个地址没有内容 —— 可能被移动、删除，或者从来就不存在。回首页看看全部作品。</p>
+        <a class="btn btn--ghost" href="/">
+          返回首页 BACK HOME
+          <svg class="btn__arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__bottom" style="margin-top:0;border-top:0">
+      <span>© <span data-year>2026</span> SITE_FEED — DESIGNED WITH OBSESSION</span>
+      <a class="footer__top" href="/#works">查看全部作品 →</a>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/feed.js" defer></script>
+</body>
+</html>

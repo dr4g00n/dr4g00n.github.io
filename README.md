@@ -1,137 +1,90 @@
-```markdown
-# 🤖 NPC-AI 技术博客 / NPC-AI Tech Blog
-> AI 技术分享与知识交流 | AI Technology Sharing & Knowledge Exchange
+# SITE_FEED — 视觉设计档案
 
-🔗 在线地址：[https://npc-ai.com](https://npc-ai.com)
+> 个人视觉设计作品集 · 界面 / 品牌 / 编辑 / 实验
+> 在线地址：<https://isec.club>
 
----
+深色编辑风格的作品集网站：近黑底色 + 青柠强调色、超大号标题、编号作品网格、跑马灯与巨大页脚标语。纯静态 HTML/CSS/JS，无构建步骤、无框架、无第三方 JS 依赖。
 
-## 📌 项目简介
-这是一个专注于 AI 技术分享的静态博客网站，采用现代化设计和左侧导航栏布局：
-
-- 🤖 AI 技术文章与教程
-- 💡 机器学习实践经验
-- 🛠️ 开源项目展示
-- 📚 技术知识整理
-- 🎯 NPC 人工智能技术洞察
+内容即设计图：8 件作品以 16:10 大图呈现，点开进入全屏查看器，没有文章页面。
 
 ---
 
-## 🚀 快速开始（本地预览）
+## 本地预览
+
 ```bash
-# 1. 克隆到本地
-git clone https://github.com/your-username/npc-ai.github.io.git
-cd npc-ai.github.io
-
-# 2. 启动本地服务器（任选其一）
-python3 -m http.server 8080
-# npx serve -p 8080
-# pnpm dlx serve -p 8080
+python3 -m http.server 8000
+# 打开 http://localhost:8000
 ```
 
-浏览器访问 [http://localhost:8080](http://localhost:8080)
-
 ---
 
-📁 目录结构
+## 目录结构
 
 ```
 .
-├── index.html          # 首页（左侧导航栏 + 主内容区）
-├── css/                # 样式文件
-│   └── main.css        # 主样式（包含左侧导航栏样式）
-├── js/                 # JavaScript 功能
-│   ├── src/            # 源代码
-│   └── lib/            # 第三方库
-├── images/             # 图片资源
-├── lib/                # 第三方依赖库
-│   ├── font-awesome/   # 图标库
-│   ├── jquery/         # jQuery
-│   └── ...
-├── 2017/               # 博客文章按年份归档
-├── archives/           # 文章归档页面
-└── CNAME               # 自定义域名配置
+├── index.html              # 首页：hero + 跑马灯 + 作品网格 + 索引 + 页脚
+├── 404.html
+├── css/
+│   ├── feed.css            # 设计系统（tokens / 组件 / 灯箱 / 响应式）
+│   └── fonts.css           # 自托管字体 @font-face
+├── js/feed.js              # 吸顶导航、移动菜单、筛选、灯箱、揭示动画
+├── images/
+│   ├── works/              # 8 件作品图（1600×1000，兼作 og:image）
+│   └── favicon.svg
+├── lib/fonts/              # Inter / JetBrains Mono 变量字体子集
+├── sitemap.xml / robots.txt
+└── design/WebFeed.png       # 视觉设计参考
 ```
 
----
-
-🎨 技术栈与特色
-- **前端**: HTML5 + CSS3 + Vanilla JS + jQuery
-- **设计**:
-  - 🎯 左侧固定导航栏设计
-  - 🎨 青绿色 (#0ba6ab) 主题配色
-  - 📱 响应式布局（适配移动端）
-  - ✨ 悬停动画效果
-- **图标**: Font Awesome 图标库
-- **部署**: GitHub Pages（自动部署）
-- **性能**: 静态生成，加载快速
+`css/main.css`、`js/src/`、`lib/` 下的旧 NexT 资源已不再被任何页面引用，仅作回滚保留。
 
 ---
 
-📋 新增一篇博客
-1. 在 `2017/` 目录下按日期结构创建文章：
-   ```
-   2017/mm/dd/文章标题/index.html
-   ```
+## 设计规范
 
-2. 文章格式要求：
-   - 使用 HTML 格式（Hexo 生成）
-   - 包含完整的 meta 信息
-   - 添加青绿色主题样式
-   - 遵循现有文章结构
+| Token | 值 | 用途 |
+| --- | --- | --- |
+| `--bg` | `#0B0B0D` | 页面底色 |
+| `--fg` | `#F2F0EB` | 主文字（暖白） |
+| `--lime` | `#C9F24C` | 强调色：CTA、编号、ticker、标点 |
+| `--fg-dim` | `#8C8C8C` | 次级文字 |
+| `--line` | `rgba(242,240,235,.09)` | 分割线 |
+| `--font-sans` | Inter / Helvetica Neue | 标题与正文 |
+| `--font-mono` | JetBrains Mono | 标签、编号、元信息 |
 
-3. 提交更改：
-   ```bash
-   git add .
-   git commit -m "新增文章：文章标题"
-   git push origin master
-   ```
-
-4. GitHub Pages 会自动部署更新（约 1-2 分钟）
+- 容器最大宽度 `1440px`，左右留白 `clamp(20px, 4vw, 56px)`
+- 标题字距 `-0.045em`，行高 `0.86`；hero 标题全宽，简介绝对定位在右下
+- 断点：`1100px`（hero 简介定位）、`900px`（作品单列）、`780px`（移动导航）
+- 全部动效尊重 `prefers-reduced-motion`；无 JS 时内容完整可见
 
 ---
 
-📬 联系方式
-- 📧 邮箱：contact@npc-ai.com
-- 🐙 GitHub：[@npc-ai](https://github.com/npc-ai)
-- 🐦 Twitter：[@npc_ai_tech](https://twitter.com/npc_ai_tech)（可选）
-- 💼 LinkedIn：[NPC-AI](https://linkedin.com/company/npc-ai)
+## 新增一件作品
+
+1. 把设计图导出为 16:10（建议 1600×1000），命名为 `images/works/09-<slug>.jpg`。
+2. 在 `index.html` 的 `.works` 中复制一张卡片，改 `data-img` / `data-title` / `data-meta` / `data-tags`、编号、标题、年份与标签。
+3. 在 `#index` 的 `.indexlist` 中加一行，`data-open` 填新作品在卡片中的序号（从 0 开始）。
+4. 同步修改两处的 `(08)` 计数，并更新 `sitemap.xml` 的 `lastmod`。
+
+分类取值：`ui` / `brand` / `editorial` / `mobile` / `lab`（对应筛选 chips）。
 
 ---
 
-🤝 贡献 & 反馈
-欢迎提 [Issue](https://github.com/npc-ai/npc-ai.github.io/issues) 或 [Pull Request](https://github.com/npc-ai/npc-ai.github.io/pulls)。
+## 交互
 
-## 🔄 最近更新
-- **2024.09**: 重新设计为 NPC-AI 主题，添加左侧导航栏
-- **品牌升级**: iSEC CLUB → NPC-AI
-- **视觉优化**: 采用青绿色 (#0ba6ab) 主题配色
-- **交互增强**: 添加卡片式设计和悬停动画效果
+- 点击任意作品卡片或索引行 → 全屏查看器（← → 切换，Esc 关闭，点击背景关闭）
+- 深链：`/?work=3` 直接打开第 3 件作品；`/?tag=ui` 直接套用分类筛选
+- 图片支持 `loading="lazy"`、`width/height` 固定比例，避免布局抖动
 
 ---
 
-📄 许可证
-本项目基于 [MIT License](LICENSE) 开源，可自由使用、修改与再发布。
+## 部署
+
+推送到 `master` 后 GitHub Pages 自动发布，约 1–2 分钟生效。
 
 ---
 
-## 🎯 项目特色功能
+## 联系
 
-### 🎨 设计亮点
-- **左侧导航栏**: 固定定位，清晰的信息架构
-- **青绿主题**: 专业科技感的配色方案
-- **响应式设计**: 适配各种设备屏幕
-- **交互体验**: 流畅的悬停动画效果
-
-### 🔧 技术实现
-- **静态生成**: 基于 Hexo 框架的预生成 HTML
-- **现代 CSS**: 使用 Flexbox 和 CSS Grid 布局
-- **图标系统**: Font Awesome 提供丰富图标
-- **性能优化**: 无依赖的快速加载体验
-
-### 📱 访问方式
-- 🌐 主站: [https://npc-ai.com](https://npc-ai.com)
-- 🏠 本地: `http://localhost:8080` (开发模式)
-- 📦 源码: [GitHub 仓库](https://github.com/npc-ai/npc-ai.github.io)
-
-```
+- Email: <hello@isec.club>
+- GitHub: [@dr4g00n](https://github.com/dr4g00n)

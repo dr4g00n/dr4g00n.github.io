@@ -1,895 +1,356 @@
 <!DOCTYPE html>
-
-
-
-  
-
-
-<html class="theme-next muse use-motion" lang="">
+<html lang="zh-CN">
 <head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-
-
-
-
-
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="Hexo, NexT" />
-
-
-
-
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
-
-
-
-
-
+<meta charset="utf-8">
+<script>document.documentElement.className = "js";</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SITE_FEED — 视觉设计档案</title>
+<meta name="description" content="个人视觉设计档案：界面、品牌、编辑与实验。精选作品持续更新。">
+<meta name="author" content="SITE_FEED">
+<meta name="theme-color" content="#0b0b0d">
+<link rel="canonical" href="https://isec.club/">
+<link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="NPC-AI">
-<meta property="og:url" content="http://npc-ai.com/index.html">
-<meta property="og:site_name" content="NPC-AI">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="NPC-AI">
+<meta property="og:site_name" content="SITE_FEED">
+<meta property="og:title" content="SITE_FEED — 视觉设计档案">
+<meta property="og:description" content="个人视觉设计档案：界面、品牌、编辑与实验。">
+<meta property="og:url" content="https://isec.club/">
+<meta property="og:image" content="https://isec.club/images/works/01-nova.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SITE_FEED — 视觉设计档案">
+<meta name="twitter:description" content="个人视觉设计档案：界面、品牌、编辑与实验。">
+<meta name="twitter:image" content="https://isec.club/images/works/01-nova.jpg">
 
+<link rel="stylesheet" href="/css/fonts.css">
+<link rel="stylesheet" href="/css/feed.css">
 
-
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Muse',
-    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
-    motion: true,
-    duoshuo: {
-      userId: '0',
-      author: 'Author'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "SITE_FEED — 视觉设计档案",
+  "url": "https://isec.club/",
+  "description": "个人视觉设计档案：界面、品牌、编辑与实验。"
+}
 </script>
-
-
-
-  <link rel="canonical" href="http://npc-ai.com/"/>
-
-
-
-
-
-  <title>NPC-AI</title>
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="">
+<body>
+<a class="skip-link" href="#main">跳到正文</a>
 
-  
-  
-    
-  
+<header class="site-head" id="siteHead">
+  <div class="wrap site-head__inner">
+    <a class="brand" href="/">SITE_FEED<span class="brand__mark">*</span></a>
 
-  <div class="container sidebar-position-left
-   page-home
- ">
-    <div class="headband"></div>
+    <nav class="nav" aria-label="主导航">
+      <a class="nav__link" href="#works">作品 <span>WORKS</span></a>
+      <a class="nav__link" href="#index">索引 <span>INDEX</span></a>
+      <a class="nav__link" href="#contact">联系 <span>CONTACT</span></a>
+    </nav>
 
-    <!-- 左侧导航栏 -->
-    <nav id="left-sidebar" class="left-sidebar">
-      <div class="left-sidebar-inner">
-        <div class="left-sidebar-brand">
-          <a href="/" class="left-sidebar-logo">
-            <span class="site-title">NPC-AI</span>
+    <div class="site-head__actions">
+      <a class="btn btn--lime" href="mailto:hello@isec.club">来信</a>
+      <button class="burger" id="burger" aria-label="打开菜单" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <nav class="mobile-menu__list" aria-label="移动端导航">
+    <a href="#works">作品 <span>WORKS</span></a>
+    <a href="#index">索引 <span>INDEX</span></a>
+    <a href="#contact">联系 <span>CONTACT</span></a>
+    <a href="mailto:hello@isec.club">来信 <span>EMAIL</span></a>
+  </nav>
+  <div class="mobile-menu__foot">
+    <a href="mailto:hello@isec.club">hello@isec.club</a>
+    <span>© <span data-year>2026</span> SITE_FEED</span>
+  </div>
+</div>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow eyebrow--lime">PERSONAL VISUAL ARCHIVE — 个人视觉设计档案</p>
+
+      <div class="hero__grid">
+        <h1 class="hero__title">VISUAL DESIGN<br>FEED<span class="dot">.</span></h1>
+
+        <div class="hero__aside">
+          <a class="hero__arrow" href="#works" aria-label="查看作品列表">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 4v15"/><path d="m5 12 7 7 7-7"/>
+            </svg>
           </a>
-          <p class="left-sidebar-description">AI 技术分享与知识交流</p>
-        </div>
-
-        <div class="left-sidebar-nav">
-          <ul class="left-sidebar-menu">
-            <li class="left-sidebar-menu-item active">
-              <a href="/" class="left-sidebar-menu-link">
-                <i class="fa fa-fw fa-home"></i>
-                <span>首页</span>
-              </a>
-            </li>
-            <li class="left-sidebar-menu-item">
-              <a href="/archives/" class="left-sidebar-menu-link">
-                <i class="fa fa-fw fa-archive"></i>
-                <span>文章归档</span>
-              </a>
-            </li>
-            <li class="left-sidebar-menu-item">
-              <a href="/tags/" class="left-sidebar-menu-link">
-                <i class="fa fa-fw fa-tags"></i>
-                <span>标签</span>
-              </a>
-            </li>
-            <li class="left-sidebar-menu-item">
-              <a href="/about/" class="left-sidebar-menu-link">
-                <i class="fa fa-fw fa-info-circle"></i>
-                <span>关于我们</span>
-              </a>
-            </li>
-            <li class="left-sidebar-menu-item">
-              <a href="/contact/" class="left-sidebar-menu-link">
-                <i class="fa fa-fw fa-envelope"></i>
-                <span>联系我们</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="left-sidebar-footer">
-          <div class="left-sidebar-social">
-            <a href="#" class="social-link"><i class="fa fa-github"></i></a>
-            <a href="#" class="social-link"><i class="fa fa-twitter"></i></a>
-            <a href="#" class="social-link"><i class="fa fa-linkedin"></i></a>
-          </div>
-          <p class="left-sidebar-copyright">
-            © 2024 NPC-AI
+          <p class="hero__text">
+            这里收录我做的 <strong>视觉设计 —— 界面、品牌、编辑与实验</strong>。
+            持续更新，点开任意作品查看大图。
           </p>
         </div>
       </div>
-    </nav>
-
-    <!-- 主内容区域 -->
-    <div class="main-content">
-
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
-    
-
-    <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">NPC-AI</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
     </div>
-      
-        <p class="site-subtitle"></p>
-      
-  </div>
-
-  <div class="site-nav-toggle">
-    <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
-  </div>
-</div>
-
-<nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
-        
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            Home
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            Archives
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            Tags
-          </a>
-        </li>
-      
-
-      
-    </ul>
-  
-
-  
-</nav>
-
-
-
- </div>
-    </header>
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            
-  <section id="posts" class="posts-expand">
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://isec.club/2017/07/27/AboutDr4/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NPC-AI 团队">
-      <meta itemprop="description" content="AI 技术分享与知识交流">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NPC-AI">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/07/27/AboutDr4/" itemprop="url">AI 技术随笔</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-07-27T05:24:00-04:00">
-                2017-07-27
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://isec.club/2017/07/25/githubtips/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NPC-AI 团队">
-      <meta itemprop="description" content="AI 技术分享与知识交流">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NPC-AI">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/07/25/githubtips/" itemprop="url">GitHub 技巧分享</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-07-25T11:58:06-04:00">
-                2017-07-25
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <center>git remote -v 显示项目目前的远程仓库</center>
-
-
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://isec.club/2017/07/22/secinfo/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NPC-AI 团队">
-      <meta itemprop="description" content="AI 技术分享与知识交流">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NPC-AI">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/07/22/secinfo/" itemprop="url">关于 NPC-AI</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-07-22T03:38:22-04:00">
-                2017-07-22
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <center>Talk is cheap,Show me the code.</center>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
-  
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+      <div class="ticker__group">
+        <span class="ticker__item">每周更新 NEW DROP</span>
+        <span class="ticker__item">视觉设计灵感 VISUAL INSPIRATION</span>
+        <span class="ticker__item">界面 / 品牌 / 编辑 UI · BRAND · EDITORIAL</span>
+        <span class="ticker__item">持续收录 GROWING ARCHIVE</span>
+      </div>
+      <div class="ticker__group">
+        <span class="ticker__item">每周更新 NEW DROP</span>
+        <span class="ticker__item">视觉设计灵感 VISUAL INSPIRATION</span>
+        <span class="ticker__item">界面 / 品牌 / 编辑 UI · BRAND · EDITORIAL</span>
+        <span class="ticker__item">持续收录 GROWING ARCHIVE</span>
+      </div>
+    </div>
+  </div>
 
+  <section class="section" id="works">
+    <div class="wrap">
+      <div class="section__head">
+        <div>
+          <h2 class="section__title">SELECTED WORKS <span class="count">(08)</span></h2>
+          <p class="section__sub">精选作品 － 界面 / 品牌 / 编辑 / 实验</p>
+        </div>
 
+        <div class="chips" role="group" aria-label="按分类筛选">
+          <button class="chip is-active" data-filter="all" aria-pressed="true">全部</button>
+          <button class="chip" data-filter="ui" aria-pressed="false">界面</button>
+          <button class="chip" data-filter="brand" aria-pressed="false">品牌</button>
+          <button class="chip" data-filter="editorial" aria-pressed="false">编辑</button>
+          <button class="chip" data-filter="mobile" aria-pressed="false">移动</button>
+          <button class="chip" data-filter="lab" aria-pressed="false">实验</button>
+        </div>
+      </div>
+
+      <div class="works">
+
+        <a class="card reveal" href="/images/works/01-nova.jpg" data-work data-img="/images/works/01-nova.jpg" data-title="NOVA DASHBOARD" data-meta="界面 · SaaS · 深色模式 — 2025" data-tags="ui">
+          <div class="card__media">
+            <img src="/images/works/01-nova.jpg" width="1600" height="1000" alt="NOVA DASHBOARD — 深色数据面板界面设计" loading="eager" decoding="async">
+            <span class="card__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
           </div>
-          
+          <div class="card__caption">
+            <span class="card__idx">01</span>
+            <h3 class="card__title">NOVA DASHBOARD</h3>
+            <span class="card__year">2025</span>
+          </div>
+          <p class="card__tags"><span>界面</span><span>SaaS</span><span>深色模式</span></p>
+        </a>
 
+        <a class="card reveal" href="/images/works/02-maison.jpg" data-work data-img="/images/works/02-maison.jpg" data-title="MAISON ÉTÉ" data-meta="电商 · 时尚 · 极简 — 2025" data-tags="brand" style="--d:80ms">
+          <div class="card__media">
+            <img src="/images/works/02-maison.jpg" width="1600" height="1000" alt="MAISON ÉTÉ — 时尚电商首页设计" loading="lazy" decoding="async">
+            <span class="card__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
+          </div>
+          <div class="card__caption">
+            <span class="card__idx">02</span>
+            <h3 class="card__title">MAISON ÉTÉ</h3>
+            <span class="card__year">2025</span>
+          </div>
+          <p class="card__tags"><span>电商</span><span>时尚</span><span>极简主义</span></p>
+        </a>
 
-          
+        <a class="card reveal" href="/images/works/03-rawtype.jpg" data-work data-img="/images/works/03-rawtype.jpg" data-title="RAW/TYPE" data-meta="实验 · 字体 · 编辑 — 2024" data-tags="editorial">
+          <div class="card__media">
+            <img src="/images/works/03-rawtype.jpg" width="1600" height="1000" alt="RAW/TYPE — 字体与编辑设计" loading="lazy" decoding="async">
+            <span class="card__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
+          </div>
+          <div class="card__caption">
+            <span class="card__idx">03</span>
+            <h3 class="card__title">RAW/TYPE</h3>
+            <span class="card__year">2024</span>
+          </div>
+          <p class="card__tags"><span>实验</span><span>字体</span><span>编辑</span></p>
+        </a>
 
+        <a class="card reveal" href="/images/works/04-wave.jpg" data-work data-img="/images/works/04-wave.jpg" data-title="WAVE MUSIC" data-meta="产品 · 流媒体 · 霓虹渐变 — 2024" data-tags="ui" style="--d:80ms">
+          <div class="card__media">
+            <img src="/images/works/04-wave.jpg" width="1600" height="1000" alt="WAVE MUSIC — 流媒体播放器界面设计" loading="lazy" decoding="async">
+            <span class="card__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
+          </div>
+          <div class="card__caption">
+            <span class="card__idx">04</span>
+            <h3 class="card__title">WAVE MUSIC</h3>
+            <span class="card__year">2024</span>
+          </div>
+          <p class="card__tags"><span>产品</span><span>流媒体</span><span>霓虹</span></p>
+        </a>
+
+        <a class="card reveal" href="/images/works/05-terra.jpg" data-work data-img="/images/works/05-terra.jpg" data-title="TERRA COFFEE" data-meta="品牌 · 包装 · 落地页 — 2024" data-tags="brand">
+          <div class="card__media">
+            <img src="/images/works/05-terra.jpg" width="1600" height="1000" alt="TERRA COFFEE — 咖啡品牌与包装系统" loading="lazy" decoding="async">
+            <span class="card__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
+          </div>
+          <div class="card__caption">
+            <span class="card__idx">05</span>
+            <h3 class="card__title">TERRA COFFEE</h3>
+            <span class="card__year">2024</span>
+          </div>
+          <p class="card__tags"><span>品牌</span><span>包装</span><span>落地页</span></p>
+        </a>
+
+        <a class="card reveal" href="/images/works/06-atelier.jpg" data-work data-img="/images/works/06-atelier.jpg" data-title="ATELIER NORD" data-meta="建筑 · 编辑 · 网格系统 — 2023" data-tags="editorial" style="--d:80ms">
+          <div class="card__media">
+            <img src="/images/works/06-atelier.jpg" width="1600" height="1000" alt="ATELIER NORD — 建筑事务所网站设计" loading="lazy" decoding="async">
+            <span class="card__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
+          </div>
+          <div class="card__caption">
+            <span class="card__idx">06</span>
+            <h3 class="card__title">ATELIER NORD</h3>
+            <span class="card__year">2023</span>
+          </div>
+          <p class="card__tags"><span>建筑</span><span>编辑</span><span>网格</span></p>
+        </a>
+
+        <a class="card reveal" href="/images/works/07-orbit.jpg" data-work data-img="/images/works/07-orbit.jpg" data-title="ORBIT BANKING" data-meta="移动 · 金融 · UI — 2025" data-tags="mobile">
+          <div class="card__media">
+            <img src="/images/works/07-orbit.jpg" width="1600" height="1000" alt="ORBIT BANKING — 移动银行应用设计" loading="lazy" decoding="async">
+            <span class="card__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
+          </div>
+          <div class="card__caption">
+            <span class="card__idx">07</span>
+            <h3 class="card__title">ORBIT BANKING</h3>
+            <span class="card__year">2025</span>
+          </div>
+          <p class="card__tags"><span>移动</span><span>金融</span><span>UI</span></p>
+        </a>
+
+        <a class="card reveal" href="/images/works/08-noise.jpg" data-work data-img="/images/works/08-noise.jpg" data-title="NOISE POSTERS" data-meta="实验 · 海报 · 艺术指导 — 2024" data-tags="lab" style="--d:80ms">
+          <div class="card__media">
+            <img src="/images/works/08-noise.jpg" width="1600" height="1000" alt="NOISE POSTERS — 音乐节海报系列" loading="lazy" decoding="async">
+            <span class="card__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
+          </div>
+          <div class="card__caption">
+            <span class="card__idx">08</span>
+            <h3 class="card__title">NOISE POSTERS</h3>
+            <span class="card__year">2024</span>
+          </div>
+          <p class="card__tags"><span>实验</span><span>海报</span><span>艺术指导</span></p>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="index" style="padding-top:0">
+    <div class="wrap">
+      <div class="section__head">
+        <div>
+          <h2 class="section__title">INDEX <span class="count">(08)</span></h2>
+          <p class="section__sub">全部作品 － 2023 / 2025</p>
         </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+      </div>
+
+      <div class="indexlist">
+        <a class="idx" href="/images/works/01-nova.jpg" data-open="0" data-img="/images/works/01-nova.jpg" data-title="NOVA DASHBOARD" data-meta="界面 · SaaS · 深色模式 — 2025">
+          <span class="idx__num">01</span><span class="idx__title">Nova Dashboard</span><span class="idx__cat">界面</span><span class="idx__year">2025</span>
+        </a>
+        <a class="idx" href="/images/works/02-maison.jpg" data-open="1" data-img="/images/works/02-maison.jpg" data-title="MAISON ÉTÉ" data-meta="电商 · 时尚 · 极简 — 2025">
+          <span class="idx__num">02</span><span class="idx__title">Maison Été</span><span class="idx__cat">品牌</span><span class="idx__year">2025</span>
+        </a>
+        <a class="idx" href="/images/works/03-rawtype.jpg" data-open="2" data-img="/images/works/03-rawtype.jpg" data-title="RAW/TYPE" data-meta="实验 · 字体 · 编辑 — 2024">
+          <span class="idx__num">03</span><span class="idx__title">Raw/Type</span><span class="idx__cat">编辑</span><span class="idx__year">2024</span>
+        </a>
+        <a class="idx" href="/images/works/04-wave.jpg" data-open="3" data-img="/images/works/04-wave.jpg" data-title="WAVE MUSIC" data-meta="产品 · 流媒体 · 霓虹渐变 — 2024">
+          <span class="idx__num">04</span><span class="idx__title">Wave Music</span><span class="idx__cat">界面</span><span class="idx__year">2024</span>
+        </a>
+        <a class="idx" href="/images/works/05-terra.jpg" data-open="4" data-img="/images/works/05-terra.jpg" data-title="TERRA COFFEE" data-meta="品牌 · 包装 · 落地页 — 2024">
+          <span class="idx__num">05</span><span class="idx__title">Terra Coffee</span><span class="idx__cat">品牌</span><span class="idx__year">2024</span>
+        </a>
+        <a class="idx" href="/images/works/06-atelier.jpg" data-open="5" data-img="/images/works/06-atelier.jpg" data-title="ATELIER NORD" data-meta="建筑 · 编辑 · 网格系统 — 2023">
+          <span class="idx__num">06</span><span class="idx__title">Atelier Nord</span><span class="idx__cat">编辑</span><span class="idx__year">2023</span>
+        </a>
+        <a class="idx" href="/images/works/07-orbit.jpg" data-open="6" data-img="/images/works/07-orbit.jpg" data-title="ORBIT BANKING" data-meta="移动 · 金融 · UI — 2025">
+          <span class="idx__num">07</span><span class="idx__title">Orbit Banking</span><span class="idx__cat">移动</span><span class="idx__year">2025</span>
+        </a>
+        <a class="idx" href="/images/works/08-noise.jpg" data-open="7" data-img="/images/works/08-noise.jpg" data-title="NOISE POSTERS" data-meta="实验 · 海报 · 艺术指导 — 2024">
+          <span class="idx__num">08</span><span class="idx__title">Noise Posters</span><span class="idx__cat">实验</span><span class="idx__year">2024</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer" id="contact">
+  <div class="wrap">
+    <p class="eyebrow eyebrow--lime">FOLLOW ME — 关注与联系</p>
+    <h2 class="footer__headline">STAY IN<br>THE LOOP <span class="star">✳</span></h2>
+
+    <div class="footer__contact">
+      <a class="btn btn--ghost" href="mailto:hello@isec.club">
+        hello@isec.club
+        <svg class="btn__arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
+      </a>
+      <p class="footer__note">有项目或合作想法？欢迎来信。</p>
+    </div>
+
+    <div class="footer__social">
+      <a class="social" href="https://github.com/dr4g00n" target="_blank" rel="noopener">
+        <span class="social__circle">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.72-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.69 5.4-5.25 5.69.41.35.78 1.05.78 2.12v3.15c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg>
+        </span>
+        <span class="social__label">GITHUB</span>
+      </a>
+
+      <a class="social" href="mailto:hello@isec.club">
+        <span class="social__circle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg>
+        </span>
+        <span class="social__label">EMAIL</span>
+      </a>
+
+      <a class="social social--lime" href="#works">
+        <span class="social__circle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="7.5" height="7.5"/><rect x="13.5" y="3" width="7.5" height="7.5"/><rect x="3" y="13.5" width="7.5" height="7.5"/><rect x="13.5" y="13.5" width="7.5" height="7.5"/></svg>
+        </span>
+        <span class="social__label">WORKS</span>
+      </a>
+
+      <a class="social" href="#main">
+        <span class="social__circle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20V4"/><path d="m5 11 7-7 7 7"/></svg>
+        </span>
+        <span class="social__label">TOP</span>
+      </a>
+    </div>
+
+    <div class="footer__bottom">
+      <span>© <span data-year>2026</span> SITE_FEED — DESIGNED WITH OBSESSION</span>
+      <a class="footer__top" href="#main">
+        回到顶部 BACK TO TOP
+        <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 11V1"/><path d="M1.5 5.5 6 1l4.5 4.5"/></svg>
+      </a>
     </div>
   </div>
+</footer>
 
-  <aside id="sidebar" class="sidebar">
-    
-    <div class="sidebar-inner">
-
-      
-
-      
-
-      <section class="site-overview sidebar-panel sidebar-panel-active">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="/images/avatar.gif"
-               alt="NPC-AI 团队" />
-          <p class="site-author-name" itemprop="name">NPC-AI 团队</p>
-           
-              <p class="site-description motion-element" itemprop="description">AI 技术分享与知识交流</p>
-          
-        </div>
-        <nav class="site-state motion-element">
-
-          
-            <div class="site-state-item site-state-posts">
-              <a href="/archives/">
-                <span class="site-state-item-count">3</span>
-                <span class="site-state-item-name">posts</span>
-              </a>
-            </div>
-          
-
-          
-
-          
-
-        </nav>
-
-        
-
-        <div class="links-of-author motion-element">
-          
-        </div>
-
-        
-        
-
-        
-        
-
-        
-
-
-      </section>
-
-      
-
-      
-
-    </div>
-  </aside>
-
-
-        
-      </div>
-    </main>
-
-    </div>
-    <!-- 主内容区域结束 -->
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy; 
-  <span itemprop="copyrightYear">2024</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">NPC-AI</span>
-</div>
-
-
-<div class="powered-by">
-  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
-</div>
-
-<div class="theme-info">
-  Theme -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Muse
-  </a>
-</div>
-
-
-        
-
-        
-      </div>
-    </footer>
-
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
-
+<div class="lb" id="lightbox" role="dialog" aria-modal="true" aria-label="作品预览" aria-hidden="true">
+  <button class="lb__close" data-lb-close aria-label="关闭预览">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+  </button>
+  <button class="lb__nav lb__prev" data-lb-prev aria-label="上一件作品">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m11 18-6-6 6-6"/></svg>
+  </button>
+  <button class="lb__nav lb__next" data-lb-next aria-label="下一件作品">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+  </button>
+  <div class="lb__stage"><img class="lb__img" id="lbImg" alt=""></div>
+  <div class="lb__bar">
+    <span class="lb__idx" id="lbIdx">01 / 08</span>
+    <h2 class="lb__title" id="lbTitle">—</h2>
+    <span class="lb__meta" id="lbMeta">—</span>
   </div>
+</div>
 
-  
-
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
-</script>
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
-  
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
-
-
-
-  
-  
-
-  
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
+<script src="/js/feed.js" defer></script>
 </body>
 </html>
